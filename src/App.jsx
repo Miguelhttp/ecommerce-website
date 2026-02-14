@@ -9,19 +9,22 @@ import "./App.css";
 
 // Componentes
 import Navbar from "./components/navbar";
+import AuthProvider from "./providers/auth-provider";
 
 // Componente principal da aplicação
 const App = () => {
   return (
-    <div className="app">
-      <Navbar />
+    <AuthProvider>
+      <div className="app">
+        <Navbar />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/auth" element={<Auth />} />
-        <Route path="/checkout" element={<Checkout />} />
-      </Routes>
-    </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/auth" element={<Auth />} />
+          <Route path="/checkout" element={<Checkout />} />
+        </Routes>
+      </div>
+    </AuthProvider>
   );
 };
 
