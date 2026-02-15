@@ -10,6 +10,7 @@ import "./App.css";
 // Componentes
 import Navbar from "./components/navbar";
 import AuthProvider from "./providers/auth-provider";
+import ProductsDetail from "./pages/ProductsDetail";
 
 // Componente principal da aplicação
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/auth" element={<Auth />} />
           <Route path="/checkout" element={<Checkout />} />
+          <Route path="/products/:id" element={<ProductsDetail />} />
         </Routes>
       </div>
     </AuthProvider>
