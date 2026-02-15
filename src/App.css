@@ -209,6 +209,14 @@ body {
   margin-bottom: 2rem;
 }
 
+.product-description-cart {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+
 .auth-container {
   max-width: 400px;
   margin: 0 auto;
@@ -476,6 +484,15 @@ body {
 
 .btn-secondary:hover {
   background-color: #545b62;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
 }
 
 .btn-large {
